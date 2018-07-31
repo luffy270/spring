@@ -1,0 +1,31 @@
+
+spring:
+  application:
+    name: eureke Client
+  cloud:
+    config:
+      name: config-client
+      label: master
+      profile: dev
+server:
+  port: 8083
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka
+    enabled: true
+  instance:
+    statusPageUrlPath: http://localhost:8083/status
+    homePageUrl: http://localhost:8083/status
+management:
+  endpoint:
+    info:
+      enabled: true
+    health:
+      show-details: always
+
+
+
+
+
+
