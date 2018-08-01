@@ -2,6 +2,6 @@ info:
   profile: default
   from: git1
   
-test: Test
+test:默认环境
 
 mymessage:我的消息
