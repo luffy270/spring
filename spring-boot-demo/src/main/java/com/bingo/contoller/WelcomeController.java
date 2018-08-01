@@ -12,7 +12,7 @@ public class WelcomeController {
     @Value("${info.message}")
     private String messgae;
 
-    @RequestMapping(value = "/welcome",method = {RequestMethod.GET})
+    @RequestMapping(value = "/test",method = {RequestMethod.GET})
     public String welcome(Model model)
     {
         model.addAttribute("host",messgae);
