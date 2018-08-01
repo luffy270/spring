@@ -2,4 +2,6 @@ info:
   profile: default
   from: git1
   
-test: bbb
+test: Test
+
+mymessage:我的消息
