@@ -1,0 +1,8 @@
+info:
+  profile: dev
+  from: git
+  
+test: dev
+text: config-client-dev
+  
+  
