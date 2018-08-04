@@ -1,5 +1,6 @@
 package com.bingo.springbootdemo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -16,6 +17,9 @@ import java.util.Map;
 @ComponentScan("com.bingo")
 @EnableDiscoveryClient
 public class SpringBootDemoApplication {
+
+	@Value("${text}")
+	private String textStr;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootDemoApplication.class, args);
@@ -36,6 +40,13 @@ public class SpringBootDemoApplication {
 	public String test()
 	{
 		return "test8003";
+	}
+
+	@RequestMapping("/testConfig")
+	@ResponseBody
+	public String testConfig()
+	{
+		return textStr;
 	}
 
 }
