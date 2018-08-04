@@ -13,7 +13,7 @@ import java.util.Map;
 
 @SpringBootApplication
 @Controller
-@ComponentScan("com.bingo.controller")
+@ComponentScan("com.bingo")
 @EnableDiscoveryClient
 public class SpringBootDemoApplication {
 
@@ -23,15 +23,14 @@ public class SpringBootDemoApplication {
 
 	@RequestMapping("/helloWorld")
 	@ResponseBody
-	Map<String,Object> helloWorld()
+	public Map<String,Object> helloWorld()
 	{
 		Map<String,Object> result = new HashMap<>();
-		result.put("A","A");
-		result.put("B","B");
+		result.put("A","AAAAA");
+		result.put("B","BBBBB");
 		return result;
 	}
 
-
-
-
 }
+
+
