@@ -31,6 +31,13 @@ public class SpringBootDemoApplication {
 		return result;
 	}
 
+	@RequestMapping("/server")
+	@ResponseBody
+	public String test()
+	{
+		return "test8003";
+	}
+
 }
 
 
