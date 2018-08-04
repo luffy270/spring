@@ -12,7 +12,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka
+      defaultZone: http://114.67.33.155:1111//eureka
     enabled: true
   instance:
     statusPageUrlPath: http://localhost:8083/status
