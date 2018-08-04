@@ -16,7 +16,7 @@ public class ClientDemoController {
     @RequestMapping("/client")
     public Map<String,Object> client()
     {
-        Map<String,Object> result = restTemplate.getForObject("http://SPRINGBOOTDEMO/test",Map.class);
+        Map<String,Object> result = restTemplate.getForObject("http://SPRINGBOOTDEMO/helloWorld",Map.class);
         return result;
     }
 
